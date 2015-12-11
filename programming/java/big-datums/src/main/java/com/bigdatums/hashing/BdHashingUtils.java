@@ -6,7 +6,6 @@ import java.security.NoSuchAlgorithmException;
 public class BdHashingUtils {
 
     public static String md5OfString(String str){
-
         StringBuilder sb = new StringBuilder();
 
         try {
