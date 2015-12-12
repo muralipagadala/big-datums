@@ -16,13 +16,14 @@ public class BdHashingUtils {
             for(byte dByte : digest){
                 sb.append(String.format("%02x", dByte & 0xff));
             }
+            return sb.toString();
         } catch(NoSuchAlgorithmException e) {
             System.out.println(e);
         } catch(NullPointerException e){
             System.out.println("NullPointerException: Please provide a valid string");
         }
 
-        return sb.toString();
+        return null;
     }
 
     public static void main(String[] args){

@@ -3,26 +3,28 @@ package com.bigdatums.datagen;
 import org.junit.Test;
 import org.junit.Assert;
 
+import java.util.List;
+
 public class BdDataGenTest {
 
     @Test
     public void testPeopleData(){
         BdDataGen bd = new BdDataGen();
         String delimiter = "\t";
-        String[] pd = bd.genPeopleData(100, true, false, delimiter);
+        List<String> pd = bd.genPeopleData(100, true, false, delimiter);
 
         //test size
-        Assert.assertEquals(100, pd.length);
+        Assert.assertEquals(100, pd.size());
 
         //test # of fields
-        Assert.assertEquals(12, pd[0].split(delimiter).length);
+        Assert.assertEquals(12, pd.get(0).split(delimiter).length);
 
         //test every cell has value
         boolean flag = true;
 
         flag_loop:
-        for(int i=0; i<pd.length; i++){
-            String[] pdi = pd[i].split(delimiter);
+        for(int i=0; i<pd.size(); i++){
+            String[] pdi = pd.get(1).split(delimiter);
 
             for(int j=0; j<pdi.length; j++){
                 //middle names (index 6) can be empty
@@ -42,8 +44,8 @@ public class BdDataGenTest {
         BdDataGen bd = new BdDataGen();
         String delimiter = "\t";
 
-        String[] pd = bd.genPeopleData(10, true, true, delimiter);
-        String pdStr = pd[0];
+        List<String> pd = bd.genPeopleData(10, true, true, delimiter);
+        String pdStr = pd.get(0);
 
         //test first char is quote
         Assert.assertEquals('"', pdStr.charAt(0));
