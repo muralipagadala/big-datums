@@ -18,4 +18,4 @@ CREATE EXTERNAL TABLE people_v1 (
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 LOCATION '/people_v1'
-TBLPROPERTIES ("skip.header.line.count"="1",'serialization.null.format' = '');
+TBLPROPERTIES ('skip.header.line.count'='1','serialization.null.format' = '');
