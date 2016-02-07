@@ -8,7 +8,6 @@ import org.jfairy.producer.person.Person;
 import java.util.Random;
 
 public class BdPerson {
-
     public String[] header = {"id","username","email_address","phone_number","first_name","last_name","middle_name","sex","birthdate","join_date","previous_logins","last_ip"};
 
     public int id;
