@@ -19,6 +19,10 @@ public class BinarySearch {
         return null;
     }
 
+    public static<E extends Comparable<? super E>> E searchRecursive(E[] array, E data) {
+        return BinarySearch.searchRecursive(array, data, 0, array.length-1);
+    }
+
     public static<E extends Comparable<? super E>> E searchRecursive(E[] array, E data, int low, int high){
         if(data == null || array == null) return null;
         if(high < low) return null;
