@@ -1,4 +1,4 @@
-#read 25th line of sample_data_1.txt
+#get 25th line of sample_data_1.txt
 
 #with head/tail
 cat sample_data_1.txt | head -25 | tail -1
