@@ -2,7 +2,6 @@ package com.bigdatums.interview;
 
 import org.junit.Test;
 import org.junit.Assert;
-import com.bigdatums.interview.BinarySearch;
 
 public class BinarySearchTest {
 
