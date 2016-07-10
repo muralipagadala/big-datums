@@ -3,14 +3,14 @@ package com.bigdatums.interview;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class SimpleLinkedListTest {
+public class ReverseLinkedListTest {
     @Test
     public void checkListOrder(){
         //populate list
-        SimpleLinkedList ll = new SimpleLinkedList();
-        ll.head = new SimpleLinkedList.Node(1);
-        ll.head.next = new SimpleLinkedList.Node(3);
-        ll.head.next.next = new SimpleLinkedList.Node(5);
+        ReverseLinkedList ll = new ReverseLinkedList();
+        ll.head = new ReverseLinkedList.Node(1);
+        ll.head.next = new ReverseLinkedList.Node(3);
+        ll.head.next.next = new ReverseLinkedList.Node(5);
         //reverse list
         ll.head = ll.reverse();
         //test
