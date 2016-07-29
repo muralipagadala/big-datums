@@ -32,10 +32,6 @@ public class MaxHeapArray<T extends Comparable<T>> {
             }
         }
 
-        for(T item : items) {
-            System.out.println(item);
-        }
-        System.out.println();
     }
 
     private void siftDown() {
