@@ -13,5 +13,5 @@ do
   echo $current_dt;
   
   #add 1 day to current_dt
-  current_dt=`date +"%Y-%m-%d" -d "$current_dt + 1 day"`;
+  current_dt=`date +"%Y-%m-%d" -d "$current_dt 1 day"`;
 done
