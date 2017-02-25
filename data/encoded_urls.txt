@@ -1,5 +1,0 @@
-http://stackoverflow.com/search?q=hadoop%2C+hive%2C+pig+tutorials
-http://stackoverflow.com/search?q=linux+%26+unix
-http://stackoverflow.com/search?q=%23bigdata	
-https://www.youtube.com/results?search_query=hadoop+%2B+hive
-http://bigdatums.net/?s=awk+%27%7Bprint+%241%7D%27
