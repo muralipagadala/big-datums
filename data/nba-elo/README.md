@@ -3,7 +3,7 @@ A description of the FiveThirtyEight NBA Elo dataset found here: https://github.
 
 ## Getting the Data
 
-    wget -O nbaallelo.csv https://github.com/fivethirtyeight/data/blob/master/nba-elo/nbaallelo.csv?raw=true
+    wget -O - https://github.com/fivethirtyeight/data/blob/master/nba-elo/nbaallelo.csv?raw=true | sed 's/^M/\n/g' > nba-elo.csv
 
 ## Fields and Descriptions
 
